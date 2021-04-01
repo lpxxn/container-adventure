@@ -19,4 +19,6 @@ docker exec -it 181f32db1f4a sh
 su - postgres
 psql
 
+## compose and dockerfile
+https://wkrzywiec.medium.com/database-in-a-docker-container-how-to-start-and-whats-it-about-5e3ceea77e50
 https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f
