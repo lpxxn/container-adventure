@@ -3,6 +3,7 @@ docker run --rm -it --name my-postgres-container -e POSTGRES_PASSWORD="123456" -
 
 
 这就样就可以创建多个数据库方便
+and finally input (COPY) an 1-init.sql file, located in the same folder as Dockerfile, to the /docker-entrypoint-initdb.d/ folder located in postgres Docker image that we’re using. By default all scripts located in this folder will be automatically ran during container startup.
 
 ## 测试
 docker exec -it 2aecbfbe78e1 sh
