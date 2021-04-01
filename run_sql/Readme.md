@@ -1,5 +1,6 @@
 docker build -t pg_run_sql .
 docker run --rm -it --name my-postgres-container -e POSTGRES_PASSWORD="123456" -p 5555:5432 pg_run_sql
+docker run --rm -it --name my-postgres-container -e POSTGRES_PASSWORD="123456" -e POSTGRES_USER="zhangsan" -p 5555:5432 pg_run_sql
 
 
 这就样就可以创建多个数据库方便
@@ -17,3 +18,5 @@ docker exec -it 181f32db1f4a sh
 或者这样
 su - postgres
 psql
+
+https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f
